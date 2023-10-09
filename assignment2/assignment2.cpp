@@ -43,10 +43,20 @@ int main() {
             my_list.display();
             break;
         case 5:
-            cout << "Front: " << my_list.front() << endl;
+            if (my_list.front() == 0 && my_list.front() == my_list.get_num_items()) {
+                cout << "Front: None" << endl;
+            }
+            else {
+                cout << "Front: " << my_list.front() << endl;
+            }
             break;
         case 6:
-            cout << "Back: " << my_list.back() << endl;
+            if (my_list.back() == 0 && my_list.back() == my_list.get_num_items()) {
+                cout << "Back: None" << endl;
+            }
+            else {
+                cout << "Back: " << my_list.front() << endl;
+            }
             break;
         case 7:
             cout << "Is list empty? " << endl;
