@@ -132,6 +132,7 @@
     <ClCompile Include="NonProfessional.cpp" />
     <ClCompile Include="Professional.cpp" />
     <ClCompile Include="SingleLinkedList.cpp" />
+    <ClCompile Include="Test.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Employee.h" />
@@ -139,6 +140,7 @@
     <ClInclude Include="NonProfessional.h" />
     <ClInclude Include="Professional.h" />
     <ClInclude Include="SingleLinkedList.h" />
+    <ClInclude Include="Test.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

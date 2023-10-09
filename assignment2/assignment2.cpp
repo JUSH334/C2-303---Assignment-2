@@ -1,7 +1,6 @@
 #include <iostream>
 #include "SingleLinkedList.h"
-#include "Professional.h"
-#include "NonProfessional.h"
+#include "Test.h"
 #include "Functions.h"
 
 using namespace std;
@@ -105,20 +104,19 @@ int main() {
     //INSTANCES FOR PROFESSIONAL AND NON-PROFESSIONAL DERIVED CLASSES
     cout << "TESTING THE CLASSES" << endl;
 
-    // Create instances of Professional and Nonprofessional employees
-    Professional profEmployee("John Smith", 101, 5000.0); // Monthly salary of $5000
-    NonProfessional nonProfEmployee("Alice Johnson", 201, 20.0, 40); // Hourly rate of $20, worked 40 hours
+    if (testProfessionalClass()) {
+        cout << "Professional class tests passed." << endl;
+    }
+    else {
+        cout << "Professional class tests failed." << endl;
+    }
 
-    // Testing the classes by calculating and displaying weekly salary, health care contributions, and vacation days
-    cout << "Professional Employee: " << profEmployee.get_name() << endl;
-    cout << "Weekly Salary: $" << profEmployee.weekly_salary() << endl;
-    cout << "Health Care Contributions: $" << profEmployee.health_insurance() << endl;
-    cout << "Vacation Days Earned: " << profEmployee.vacation_days() << " days" << endl;
-
-    cout << "\nNonprofessional Employee: " << nonProfEmployee.get_name() << endl;
-    cout << "Weekly Salary: $" << nonProfEmployee.weekly_salary() << endl;
-    cout << "Health Care Contributions: $" << nonProfEmployee.health_insurance() << endl;
-    cout << "Vacation Days Earned: " << nonProfEmployee.vacation_days() << " days" << endl;
+    if (testNonProfessionalClass()) {
+        cout << "Nonprofessional class tests passed." << endl;
+    }
+    else {
+        cout << "Nonprofessional class tests failed." << endl;
+    }
 
     return 0;
 }
