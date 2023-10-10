@@ -3,7 +3,6 @@
 
 using namespace std;
 
-
 // Constructor
 template <typename Item_Type>
 Single_Linked_List<Item_Type>::Single_Linked_List() : head(nullptr), tail(nullptr), num_items(0) {}
@@ -182,5 +181,8 @@ void Single_Linked_List<Item_Type>::display() const {
     cout << "None" << std::endl;
 }
 
-// Explicit instantiation of the class for int type
+// Explicit instantiation of the class for different data types
 template class Single_Linked_List<int>;
+template class Single_Linked_List<double>;
+template class Single_Linked_List<string>;
+template class Single_Linked_List<char>;
